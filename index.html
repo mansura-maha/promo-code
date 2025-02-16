@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="cart.css">
+</head>
+<body>
+<!-- navbar sect-->
+<nav class="navbar">
+    <div class="navbar-container">
+    <a href="#" class="logo">Makeup Store</a>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+</nav>
+<!-- main container sect -->
+<div class="container">
+    <div class="product-list">
+        <!-- product 1 foundation sect -->
+    <div class="product">
+        <div id="product1Carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="product1_img/mac_sku_SRMX15_1x1_0.avif" alt="Foundation 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product1_img/mac_sku_SRMX15_1x1_3.avif" alt="Foundation 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product1_img/mac_sku_SRMX15_1x1_4.avif" alt="Foundation 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#product1Carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#product1Carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <h3>/Studio Fix Fluid SPF 15 24HR Matte Foundation + Oil Control</h3>
+        <p>A 24-hour buildable, breathable foundation with a natural, soft-matte finish in 67 good-for-skin shades made for all skin tones and textures.</p>
+        <p>$39.00</p>
+        <button class="add-to-cart" onclick="addToCart(1)" data-name="Foundation" data-price="39.00">Add to Cart</button>
+        </div>
+        <!-- product 2 mascara sect -->
+        <div class="product">
+            <div id="product1Carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="product2_img/mac_sku_SLEH01_1x1_0.avif" alt="Mascara 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="product2_img/mac_sku_SLEH01_1x1_2.avif" alt="Mascara 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="product2_img/mac_sku_SLEH01_1x1_6.avif" alt="Mascara 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#product1Carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#product1Carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h3>M·A·CStack Waterproof Mascara</h3>
+            <p>Our endlessly stackable mascara is now available in waterproof! Featuring a smudge-proof, 24-hour formula that stays put all day.</p>
+            <p>$15.00</p>
+            <button class="add-to-cart" onclick="addToCart(2)" data-name="Mascara" data-price="15.00">Add to Cart</button>
+        </div>
+    <!-- product 3 lipstick sect -->
+    <div class="product">
+        <div id="product1Carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="product3_img/mac_sku_NY9N37_1x1_0.avif" alt="Lipstick 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product3_img/mac_sku_NY9N37_1x1_1.avif" alt="Lipstick 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product3_img/mac_sku_NY9N37_1x1_2.webp" alt="Lipstick 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#product1Carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#product1Carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <h3>M·A·CXIMAL SILKY MATTE LIPSTICK</h3>
+        <p>Our iconic lipstick has been maxed out to give lips MORE with a silky matte finish and good-for-lips formula that looks richer, feels better and lasts longer. Get MORE COLOUR with full-coverage, pigment-rich payoff in our widest range of Artist-appoved shades. </p>
+        <p>$25.00</p>
+        <button class="add-to-cart" onclick="addToCart(3)" data-name="Lipstick" data-price="25.00">Add to Cart</button>
+    </div>
+<!-- product 4 blush sect -->
+    <div class="product">
+        <div id="product1Carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="product4_img/mac_sku_S1YB03_1x1_0.avif" alt="Blush 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product4_img/mac_sku_S1YB03_1x1_1.png" alt="Blush 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product4_img/mac_sku_S1YB03_1x1_2.avif" alt="Blush 3">
+                </div>
+            <a class="carousel-control-prev" href="#product1Carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#product1Carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+        <h3>Skinfinish Metallic Cream Blush</h3>
+        <p>A limited-edition, weightless cream blush that provides buildable coverage with a dewy metallic finish in three holiday-exclusive luminous shades.</p>
+        <p>$33.00</p>
+        <button class="add-to-cart" onclick="addToCart(4)" data-name="Blush" data-price="33.00">Add to Cart</button>
+    </div>
+
+    <!-- product 5 eye shadow palette -->
+    <div class="product">
+        <div id="product1Carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="product5_img/mac_sku_ST2T01_1x1_0.avif" alt="Eyeshadow Palette 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product5_img/mac_sku_ST2T01_1x1_1.avif" alt="Eyeshadow Palette 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product5_img/mac_sku_ST2T01_1x1_5.avif" alt="Eyeshadow Palette 3">
+                </div>
+            <a class="carousel-control-prev" href="#product1Carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#product1Carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+        <h3>Connect In Colour Eye Shadow Palette: Hi-Fi Colour</h3>
+        <p>A technicolour 12-pan eye shadow palette with pigment packed colour in one-swipe for limitless artistic looks.</p>
+        <p>$56.00</p>
+        <button class="add-to-cart" onclick="addToCart(5)" data-name="Eyeshadow Palette" data-price="56.00">Add to Cart</button>
+    </div>
+        <!-- product 6 eye liner -->
+<div class="product">
+        <div id="product1Carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="product6_img/mac_sku_SGFJ02_1x1_0.avif" alt="Eyeliner 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product6_img/mac_sku_SGFJ02_1x1_1.avif" alt="Eyeliner 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product6_img/mac_sku_SGFJ02_1x1_2.avif" alt="Eyeliner 3">
+                </div>
+            <a class="carousel-control-prev" href="#product1Carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#product1Carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+        <h3>Brushstroke 24-Hour Liner</h3>
+        <p>A liquid eye liner pen with a precision brush tip that wears strong all day long for 24 hours.</p>
+        <p>$25.00</p>
+        <button class="add-to-cart" onclick="addToCart(6)" data-name="Eyeliner" data-price="25.00">Add to Cart</button>
+    </div>
+
+    <!-- product 7 concealer -->
+    <div class="product">
+        <div id="product1Carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="product7_img/mac_sku_SF4X02_1x1_0.avif" alt="Concealer 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product7_img/mac_sku_SF4X02_1x1_1.avif" alt="Concealer 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product7_img/mac_sku_SF4X02_1x1_3.webp" alt="Concealer 3">
+                </div>
+            <a class="carousel-control-prev" href="#product1Carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#product1Carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+        <h3>Studio Fix 24-Hour Smooth Wear Concealer</h3>
+        <p>A lightweight liquid concealer with a wand applicator that offers 24-hour wear with medium-to-full buildable coverage and a natural matte finish.</p>
+        <p>$30.00</p>
+        <button class="add-to-cart" onclick="addToCart(7)" data-name="Concealer" data-price="30.00">Add to Cart</button>
+    </div>
+<!-- product 8 setting spray -->
+    <div class="product">
+        <div id="product1Carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="product8_img/mac_sku_S0RQ01_1x1_0.avif" alt="Setting Spray 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product8_img/mac_sku_S0RQ01_1x1_1.avif" alt="Setting Spray 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="product8_img/mac_sku_S0RQ01_1x1_4.webp" alt="Setting Spray 3">
+                </div>
+            <a class="carousel-control-prev" href="#product1Carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#product1Carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+        <h3>FIX+ MAGIC RADIANCE Makeup setting spray</h3>
+        <p>A nourishing skin mist that imparts all-day, ultra-hydration. Add a boost of radiance with vitamin C, hyaluronic acid and essential oils. Now with an all-new fine-mist pump!</p>
+        <p>$38.00</p>
+        <button class="add-to-cart" onclick="addToCart(8)" data-name="Setting Spray" data-price="38.00">Add to Cart</button>
+    </div>
+<!-- product 9 highlighter -->
+<div class="product">
+    <div id="product1Carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="product9_img/mac_sku_S1QR03_1x1_0.avif" alt="Highlighter 1">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="product9_img/mac_sku_S1QR03_1x1_2.avif" alt="Highlighter 2">
+            </div>
+        <a class="carousel-control-prev" href="#product1Carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#product1Carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+    <h3>Gift Of Gold Jelly Slime All-Over Highlighter</h3>
+    <p>A limited-edition buildable, silky-smooth jelly hybrid highlighter for the face and body in a holiday-exclusive metallic copper shade.</p>
+    <p>$33.00</p>
+    <button class="add-to-cart" onclick="addToCart(9)" data-name="Highlighter" data-price="33.00">Add to Cart</button>
+</div>
+<div class="product-list"></div>
+<div class="cart-container">
+    <h2>Your Cart</h2>
+    
+    <div id="cart-items">
+    </div>
+
+    <button id="clear-cart">Clear Cart</button>
+
+    <div id="cart-total">
+        <button id="checkout">Checkout</button>
+    </div>
+        <!-- Checkout Section (Add this inside the cart-container or in the Checkout modal) -->
+<div id="cart-summary">
+    <h3>Cart Summary</h3>
+    <p>Subtotal: $<span id="subtotal"></span></p>
+    <p>Discount: $<span id="discount-amount">0.00</span></p>
+    <p>Total: $<span id="final-total"></span></p>
+    <hr>
+    <div>
+        <label for="promo-code">Promo Code:</label>
+        <input type="text" id="promo-code" placeholder="Enter promo code">
+        <button id="apply-promo">Apply Promo</button>
+    </div>
+    <p id="promo-message"></p>
+</div>
+
+</div>
+
+</div>
+
+<script src="cart.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
